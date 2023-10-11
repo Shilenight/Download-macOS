@@ -86,7 +86,7 @@ jobs:
           sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallmedia --volume /Volumes/Ventura --nointeraction
           hdiutil eject -force /Volumes/Install\ macOS\ Ventura
           sudo mv /tmp/Ventura.dmg ~/Desktop/Ventura.dmg
-      - if: github.event.inputs.macos_version == 'Monterey v12.7'
+      - if: github.event.inputs.macos_version == 'Ventura v13.5.1'
         name: Upload Ventura DMG
         uses: actions/upload-artifact@v3.1.0
         with:
